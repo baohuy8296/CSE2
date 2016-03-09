@@ -19,18 +19,19 @@ int secsTrip2=3220; // time it takes for Trip 2 in seconds
 int countsTrip1=1561; // distance of Trip 1 in miles 
 int countsTrip2=9037; // distance of Trip 2 in miles
 
-double WheelDiameter=27,//
-PI=3.14159,//
-FeetPerMile=5280,//
-inchesperFoot=12,//
-secondsperMinute=60;//
+double WheelDiameter=27.0,//
+double PI=3.14159,//
+int FeetPerMile=5280,//
+int inchesperFoot=12,//
+int secondsperMinute=60;//
 double distanceTrip1, distanceTrip2,TotalDistance;//
 
-System.out.println("Trip1 took"+ (secsTrip1/secondsperMinute)+"minutes and had"+ countsTrip1 +"counts.");
+System.out.println("Trip1 took" + (secsTrip1/secondsperMinute)+ "minutes and had" + countsTrip1 +"counts.");
 
-System.out.println("Trip2 took"+ (secsTrip2/secondsperMinute)+"minutes and had"+ countsTrip2 +"counts.");
+System.out.println("Trip2 took" + (secsTrip2/secondsperMinute)+ "minutes and had" + countsTrip2 +"counts.");
 
 distanceTrip1=countsTrip1*WheelDiameter*PI;
+distanceTrip2=countsTrip2*WheelDiameter*PI;
 // Above gives distance in inches
 // (for each count, a rotation of wheels travel
 // the diameterin inches time PI)
@@ -39,8 +40,8 @@ distanceTrip2/=countsTrip2*WheelDiameter*PI/inchesperFoot/FeetPerMile;
 TotalDistance=distanceTrip1+distanceTrip2;
 
 //Print out the output data
-System.out.println("Trip 1 was"+distanceTrip1+" miles");
-System.out.println("Trip 2 was"+distanceTrip2+"miles");
-System.out.println("The total Distance was"+TotalDistance+"miles");
+System.out.println("Trip 1 was " +distanceTrip1 +" miles");
+System.out.println("Trip 2 was " +distanceTrip2 +"miles");
+System.out.println("The total Distance was " +TotalDistance +"miles");
 }
 }

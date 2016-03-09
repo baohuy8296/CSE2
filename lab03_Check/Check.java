@@ -11,8 +11,7 @@ public class Check{
     
 Scanner myScanner= new Scanner(System.in);
 
-double checkCost=myScanner. nextDouble();
- 
+double checkCost=myScanner.nextDouble();
 double tipPercent=myScanner.nextDouble();
 tipPercent/=100; 
 System.out.print("Enter the number of people who went out for dinner:");
@@ -20,7 +19,7 @@ int numPeople=myScanner.nextInt();
 double totalCost=0;
 double costPerPerson=0;
 int dollars,   
-totalCost=checkCost*(1.0+tipPercent);
+totalCost=checkCost*(1+tipPercent);
 costPerPerson=totalCost/numPeople;
 dollar=(int)costPerPerson;
 dimes=(int)(costPerPerson*10)%10;
